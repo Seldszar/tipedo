@@ -1,0 +1,59 @@
+{
+  "name": "tipedo",
+  "version": "0.0.0-development",
+  "description": "Multilayered datastore",
+  "author": "Alexandre Breteau <contact@seldszar.fr>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/seldszar/tipedo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seldszar/tipedo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seldszar/tipedo/issues"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "engine": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "documentation": "documentation build lib/index.js --format=md --output=API.md",
+    "lint": "eslint --format codeframe .",
+    "lint-staged": "lint-staged",
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "babel-eslint": "^10.0.1",
+    "documentation": "^8.1.2",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.0.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.14.3",
+    "semantic-release": "^15.9.16"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --format codeframe"
+  }
+}

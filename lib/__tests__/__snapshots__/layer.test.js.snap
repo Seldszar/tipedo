@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layer should clear the layer 1`] = `
+Object {
+  "name": "lorem",
+  "nodes": Object {},
+}
+`;
+
+exports[`Layer should indicate if the \`lorem\` node exists 1`] = `true`;
+
+exports[`Layer should return \`false\` if the node doesn't exist 1`] = `false`;
+
+exports[`Layer should return \`true\` if the node exists 1`] = `true`;
+
+exports[`Layer should return an empty layer 1`] = `
+Object {
+  "name": "lorem",
+  "nodes": Object {},
+}
+`;
+
+exports[`Layer should return the \`lorem\` node 1`] = `"from lorem"`;
+
+exports[`Layer should return the JSON compatible object 1`] = `
+Object {
+  "name": "lorem",
+  "nodes": Object {
+    "lorem": "from lorem",
+  },
+}
+`;
+
+exports[`Layer should return the entries 1`] = `
+Array [
+  Array [
+    "lorem",
+    "from lorem",
+  ],
+]
+`;
+
+exports[`Layer should return the identity 1`] = `"[object Layer]"`;
+
+exports[`Layer should return the keys 1`] = `
+Array [
+  "lorem",
+]
+`;
+
+exports[`Layer should return the values 1`] = `
+Array [
+  "from lorem",
+]
+`;
+
+exports[`Layer should walk through the layer and return the nodes 1`] = `
+Array [
+  Array [
+    "from lorem",
+    "lorem",
+    Map {
+      "lorem" => "from lorem",
+    },
+  ],
+]
+`;

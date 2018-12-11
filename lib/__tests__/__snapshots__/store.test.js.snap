@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store should include the nodes from the \`lorem\` layer 1`] = `
+Array [
+  "lorem",
+]
+`;
+
+exports[`Store should return an empty store 1`] = `
+Object {
+  "nodes": Object {},
+}
+`;
+
+exports[`Store should return the JSON compatible object 1`] = `
+Object {
+  "nodes": Object {
+    "ipsum": "from ipsum",
+    "lorem": "from lorem",
+  },
+}
+`;
+
+exports[`Store should return the entries 1`] = `
+Array [
+  Array [
+    "lorem",
+    "from lorem",
+  ],
+  Array [
+    "ipsum",
+    "from ipsum",
+  ],
+]
+`;
+
+exports[`Store should return the identity 1`] = `"[object Store]"`;
+
+exports[`Store should return the keys 1`] = `
+Array [
+  "lorem",
+  "ipsum",
+]
+`;
+
+exports[`Store should return the values 1`] = `
+Array [
+  "from lorem",
+  "from ipsum",
+]
+`;
+
+exports[`Store should walk through the store and return the nodes 1`] = `
+Array [
+  Array [
+    "from lorem",
+    "lorem",
+  ],
+  Array [
+    "from ipsum",
+    "ipsum",
+  ],
+]
+`;
